@@ -1,0 +1,21 @@
+[project]
+name = "nexuspay-rag"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { email = "valiefff.r@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "pgvector>=0.5.1",
+    "psycopg[binary]>=3.3.9",
+    "python-dotenv>=1.2.4",
+]
+
+[project.scripts]
+nexuspay-rag = "nexuspay_rag:main"
+
+[build-system]
+requires = ["uv_build>=0.13.9,<0.14.0"]
+build-backend = "uv_build"
